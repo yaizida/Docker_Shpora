@@ -1,10 +1,13 @@
 # Docker_Shpora
 
-### - Пооднять контейнер в фоновом режиме 
+### - Пооднять контейнер в фоновом режиме
 ```
 docker run -d <image_name>
 ```
-
+### - Запукск контейнера из образа <image_name>
+```
+docker run -d --name mн_container <image_name>
+```
 ### - Поднять орекстр в фоновом режиме 
 ```
 docker-compose -f <compose_name.yml> up -d
