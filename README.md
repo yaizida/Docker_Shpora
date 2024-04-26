@@ -1,5 +1,9 @@
 # Docker_Shpora
 
+### - Собрать контейнер 
+```
+docker build -t <name> .
+```
 ### - Пооднять контейнер в фоновом режиме
 ```
 docker run -d <image_name>
