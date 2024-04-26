@@ -11,7 +11,9 @@
 
 ### Создать docker network 
 Это нужно что бы контейнеры могли "общаться" с друг другом
-```docker network create my-network```
+```
+docker network create my-network
+```
 
 ### Проверить какие контейнеры есть в сети докер 
 ```docker network inspect <network_name>```
