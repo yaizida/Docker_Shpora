@@ -33,14 +33,16 @@ docker network create my-network
 docker network inspect <network_name>
 ```
 
-### - Опустить все запущенные контейнеры 
-```
-docker stop $(docker ps -a -q)
-```
 ### Добваить внутрь сети контейнер
 ```
 docker network connect <network name> <container name>
 ```
+
+### - Опустить все запущенные контейнеры 
+```
+docker stop $(docker ps -a -q)
+```
+
 ### - Для остановки контейнеров Docker:
 ```
 sudo docker compose down -v      # с их удалением
