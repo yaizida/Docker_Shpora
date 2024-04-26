@@ -37,6 +37,10 @@ docker network inspect <network_name>
 ```
 docker stop $(docker ps -a -q)
 ```
+### Добваить внутрь сети контейнер
+```
+docker network connect <network name> <container name>
+```
 ### - Для остановки контейнеров Docker:
 ```
 sudo docker compose down -v      # с их удалением
