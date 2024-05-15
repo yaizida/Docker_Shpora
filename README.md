@@ -48,3 +48,8 @@ docker stop $(docker ps -a -q)
 sudo docker compose down -v      # с их удалением
 sudo docker compose stop         # без удаления
 ```
+
+### - Для просмотра id контейнера
+```
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_name_or_id>
+```
