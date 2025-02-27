@@ -43,6 +43,11 @@ docker network connect <network name> <container name>
 docker stop $(docker ps -a -q)
 ```
 
+### - Опустить все запущенные контейнеры 
+```
+docker exec -it <container_name/container_id> /bin/bash
+```
+
 ### - Для остановки контейнеров Docker:
 ```
 sudo docker compose down -v      # с их удалением
