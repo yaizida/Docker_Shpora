@@ -55,7 +55,9 @@ sudo docker compose stop         # без удаления
 ```
 
 ### - Удалить все остановелнные контейнеры без потдверждения
-```docker rm $(docker ps -aq -f status=exited)```
+```
+docker rm $(docker ps -aq -f status=exited)
+```
 
 ### - Для просмотра id контейнера
 ```
