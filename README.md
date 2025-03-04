@@ -54,6 +54,9 @@ sudo docker compose down -v      # с их удалением
 sudo docker compose stop         # без удаления
 ```
 
+### - Удалить все остановелнные контейнеры без потдверждения
+```docker rm $(docker ps -aq -f status=exited)```
+
 ### - Для просмотра id контейнера
 ```
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_name_or_id>
